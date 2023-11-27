@@ -1,0 +1,86 @@
+h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; /* Tipo de letra elegante */
+  font-size: 18px;
+  padding: 5px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Tipo de letra elegante */
+  font-size: 16px;
+  padding: 5px;
+  margin-left: 5px;
+  text-align: left;
+  color: blue;
+}
+
+strong {
+  font-weight: bold;
+  color: red;
+}
+
+body {
+  background-color: rgb(173, 216, 230);
+}
+
+footer {
+  background-color: #333; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  padding: 10px 0; /* Espaciado interior */
+  text-align: center; /* Centrar el contenido */
+}
+
+.imagen-container {
+  width: 300px; /* Ancho deseado */
+  height: 300px; /* Alto deseado */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333; /* Establece un borde de 2 píxeles de grosor de color gris oscuro (#333) */
+  background-image: url("upload-icon.png");
+  background-size: 100% 100%; /* Cambia el tamaño de la imagen de fondo al 100% del contenedor */
+  background-position: center;
+  padding: 20px; /* Agrega espacio interno alrededor del contenido */
+}
+
+input[type="file"] {
+  background-color: rgb(0, 51, 102); /* Cambia el color de fondo a azul claro */
+  color: yellow; /* Cambia el color del texto a blanco */
+  padding: 6px; /* Añade espacio interno alrededor del campo de entrada */
+  border: 2px solid #0072ff; /* Establece un borde azul alrededor del campo */
+  border-radius: 5px; /* Agrega esquinas redondeadas al borde */
+  width: 300px;
+}
+input{
+  background-color: rgb(0, 51, 102); /* Cambia el color de fondo a azul claro */
+  color: yellow; /* Cambia el color del texto a blanco */
+  padding: 6px; /* Añade espacio interno alrededor del campo de entrada */
+  border: 2px solid #0072ff; /* Establece un borde azul alrededor del campo */
+  border-radius: 5px; /* Agrega esquinas redondeadas al borde */
+}
+.formulario-con-texto {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.texto-junto-al-formulario {
+  margin-left: 20px; /* Agrega espacio a la izquierda del texto para separarlo del formulario */
+}
+
+/* Puedes agregar más estilos para personalizar el diseño según tus necesidades */
+
+.contenedor-centralizado {
+  justify-content: flex-start; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 65vh; /* Establece la altura al 100% del viewport (pantalla) */
+}
+
+.mb-3 img {
+  width: 300px; /* Ancho deseado */
+  height: 300px; /* Alto deseado */
+  border: 1px solid rgb(0, 51, 102);
+}
+

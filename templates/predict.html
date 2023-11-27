@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <title>PREDICTION</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+
+    <style>
+        #resultado {
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff; /* Fondo blanco */
+        }
+
+        main {
+            text-align: center;
+        }
+
+        .custom-container {
+            border: 2px solid #000000; /* Borde negro */
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff; /* Fondo blanco */
+        }
+
+        /* Estilo para el botón */
+        input[type="submit"] {
+            background-color: #28a745; /* Verde */
+            color: #ffffff; /* Texto blanco */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<main class="custom-container">
+    <div class="px-4 py-2 my-2 text-center border-bottom">
+        <h1 class="display-5 fw-bold">Resultado</h1>
+        <div class="col-lg-6 mx-auto">
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-4 offset-md-4">
+                <form action="/" enctype="multipart/form-data" id="form2">
+                    <div class="mb-3 text-center">
+                        <h1 style="color: rgb(0, 51, 102); font-family: 'Times New Roman', Times, serif;">
+                            El número de la imagen es: {{datos.predi}}
+                        </h1>
+                        <br />
+                        <input type="submit" value="Regresar" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+</body>
+</html>
