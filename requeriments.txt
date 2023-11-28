@@ -2,7 +2,7 @@ Flask==2.2.2
 tensorflow==2.10.0
 keras==2.10.0
 numpy
-imageio==2.31.4
+imageio
 matplotlib==3.8.0
 gunicorn==21.2.0
 Werkzeug==2.2.2
