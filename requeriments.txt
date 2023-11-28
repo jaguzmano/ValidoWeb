@@ -3,6 +3,6 @@ tensorflow==2.10.0
 keras==2.10.0
 numpy
 imageio
-matplotlib==3.8.0
-gunicorn==21.2.0
+matplotlib
+gunicorn
 Werkzeug==2.2.2
